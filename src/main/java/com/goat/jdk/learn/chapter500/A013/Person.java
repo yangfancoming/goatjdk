@@ -4,7 +4,7 @@ package com.goat.jdk.learn.chapter500.A013;
  * Created by 64274 on 2018/6/26.
  * @author 山羊来了
  * @date 2018/6/26---16:47
- * 类属性  sos “0值概念” 基本类型    默认值
+ * 八种基本数据类型   sos “0值概念” 基本类型    默认值
  *  int short byte ==== 0
  * long           ==== 0L
  * boolean        ==== false
@@ -12,7 +12,7 @@ package com.goat.jdk.learn.chapter500.A013;
  * float        ====  0.0F
  * double       ==== 0.0
  *
- * 所有引用类型 null  （String,Integer....）
+ * 所有引用数据类型 ====  null  （String,Integer....）
  *
  *
  *  基本数据类型  占字节长度

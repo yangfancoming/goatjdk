@@ -1,4 +1,4 @@
-package com.goat.jdk.learn.chapter500.A011;
+package com.goat.jdk.learn.chapter500.A016;
 
 /**
  * Created by 64274 on 2019/8/27.
@@ -14,6 +14,23 @@ public class Person {
     double height;
     char sex;
 
+    /* 无参构造函数 */
+    public Person() {
+        System.out.println("Person类 构造方法 执行！");
+    }
+
+    /* 有参构造函数 重载 */
+    public Person(String name, int age, double height, char sex) {
+        /**
+         * 当形参名称 与 成员属性名称 相同时  会发生就近原则：形参覆盖掉成员属性
+         * eg: name = name ;  两个name 都引用的是形参
+         * 解决方法： 第一个name 前加上 this
+        */
+        this.name = name;
+        this.age = age;
+        this.height = height;
+        this.sex = sex;
+    }
 
     /* 无返回值  无参数 */
     public void eat(){
