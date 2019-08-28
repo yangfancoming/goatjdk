@@ -22,11 +22,12 @@ public class App {
 
 
     /**
-     * 创建对象步骤：
-     * 1. 先对该类进行加载 ClassLoader#loadClass(name, false)  （该步骤已经创建对象  但是还没有给成员变量赋值）
-     * 2. 找到该类的构造函数  (为了给成员变量赋值)
-     * 3. 同一类 只会被加载一次
-    */
+     * 创建对象步骤： 加载步骤
+     * 1. 先对该类进行加载 ClassLoader#loadClass(name, false)   将 static 属性  加载到 方法区中的静态域，
+     * 2. 依照已加载的class类模板 创建出空对象 （该步骤已经创建对象  但是还没有给成员变量赋值）
+     * 3. 找到该类的构造函数  (为了给成员变量赋值)
+     * 4. 同一类 只会被加载一次
+     */
     @Test
     public void test1(){
         Person p1 = new Person();//  类加载   进入ClassLoader#loadClass(name, false)
