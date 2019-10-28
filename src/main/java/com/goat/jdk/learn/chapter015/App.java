@@ -34,7 +34,6 @@ public class App  {
         System.out.print(s);
     }
 
-
     @Test
     public void test3() throws IOException {
         String str = "from yiibai.com";
