@@ -1,4 +1,4 @@
-package com.goat.jdk.learn.chapter009.D001;
+package com.goat.jdk.learn.chapter009.D001.item01;
 
 /**
  * Created by Administrator on 2019/11/12.
