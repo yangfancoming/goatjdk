@@ -13,8 +13,6 @@ public class Apple<T> {
     // 使用T类型形参定义实例变量
     private T info;
 
-    public Apple(){}
-
     // 下面方法中使用T类型形参来定义构造器
     public Apple(T info){
         this.info = info;

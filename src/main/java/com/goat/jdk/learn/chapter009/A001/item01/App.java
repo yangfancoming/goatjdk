@@ -23,10 +23,4 @@ public class App {
         System.out.println(c3.getKey() + " : " + c3.getValue());
     }
 
-    /**
-     */
-    @Test
-    public void test2(){
-
-    }
 }
