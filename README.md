@@ -36,6 +36,8 @@
 # chapter007  Java基础类库
     A021 System
       
+# chapter008  Java 集合
+
 # chapter009  泛型
         A001  泛型类
         B001  泛型接口
