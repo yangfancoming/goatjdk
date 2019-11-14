@@ -1,6 +1,7 @@
 package com.goat.jdk.learn.chapter008.A06.item04;
 
 
+import org.junit.Before;
 import org.junit.Test;
 import java.util.Properties;
 
@@ -11,16 +12,20 @@ public class PropertiesTest3 {
 
     Properties prop = new Properties();
 
-    @Test
-    public void out() {
+    @Before
+    public void before(){
         prop.put("Height", "200");
-        prop.put("Width", "150");
+        prop.put("Width", "");
         prop.put("Scannable", "true");
-        // get two properties and print them
-        System.out.println( prop.getProperty("Scannable","false"));
-        System.out.println( prop.getProperty("Width","150"));
     }
 
-
+    @Test
+    public void out() {
+        // Scannable 和  Width  都存在所以 传入的defaultValue无效
+        System.out.println( prop.getProperty("Scannable","false"));
+        System.out.println( prop.getProperty("Width","160"));
+        // hoho 是不存在的key  返回 defaultValue
+        System.out.println( prop.getProperty("hoho","wahaha"));
+    }
 
 }
