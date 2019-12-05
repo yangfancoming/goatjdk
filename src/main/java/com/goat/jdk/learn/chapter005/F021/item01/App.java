@@ -1,4 +1,4 @@
-package com.goat.jdk.learn.chapter005.F021;
+package com.goat.jdk.learn.chapter005.F021.item01;
 
 import org.junit.Test;
 
@@ -22,10 +22,18 @@ public class App {
     }
 
     /**
-     * 在子类中 调用父类的方法
+     * 在子类中 间接调用父类的方法
     */
     @Test
     public void test1(){
         os.callSuper();
+    }
+
+    /**
+     * 在子类中 直接调用父类的方法
+     */
+    @Test
+    public void test2(){
+        os.eat();
     }
 }

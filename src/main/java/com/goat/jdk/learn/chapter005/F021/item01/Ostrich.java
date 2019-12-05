@@ -1,4 +1,4 @@
-package com.goat.jdk.learn.chapter005.F021;
+package com.goat.jdk.learn.chapter005.F021.item01;
 
 
 public class Ostrich extends Bird {
