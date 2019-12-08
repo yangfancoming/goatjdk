@@ -15,8 +15,6 @@ import java.util.*;
  */
 public class MyMapJDK8 extends MapBase {
 
-
-
     @Test
     public void replace1(){  // 尝试替换key为"疯狂XML讲义"的value，由于原Map中没有对应的key，  因此Map集合没有发生任何改变
         map.replace("疯狂XML讲义" , 66);
