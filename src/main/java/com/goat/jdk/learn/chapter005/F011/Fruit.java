@@ -11,7 +11,7 @@ public class Fruit {
 
     public double weight;
 
-    public void info(){
-        System.out.println("我是一个水果，重" + weight + "g");
+    public void info(String name){
+        System.out.println("我是一个" + name + "，重" + weight + "g");
     }
 }
