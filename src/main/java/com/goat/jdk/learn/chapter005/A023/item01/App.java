@@ -1,4 +1,4 @@
-package com.goat.jdk.learn.chapter005.A023;
+package com.goat.jdk.learn.chapter005.A023.item01;
 
 import org.junit.Test;
 
