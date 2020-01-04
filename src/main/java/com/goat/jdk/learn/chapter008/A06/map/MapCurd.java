@@ -2,10 +2,12 @@ package com.goat.jdk.learn.chapter008.A06.map;
 
 
 
+
 import org.junit.Before;
 import org.junit.Test;
+import org.slf4j.Logger;
+import org.slf4j.LoggerFactory;
 
-import java.util.*;
 
 //sos 在测试环境里 除了需要导入junit-4.11.jar 还要导入hamcrest-core-1.3.jar ！！！   在非测试环境只需要导入junit-4.11.jar
 
@@ -17,6 +19,8 @@ import java.util.*;
      * @Date:   2018/8/6
 */
 public class MapCurd extends MapBase{
+
+    private static final Logger log = LoggerFactory.getLogger(MapCurd.class);
 
     @Before
     public void testBefore() {
@@ -40,17 +44,23 @@ public class MapCurd extends MapBase{
     /** map 判断null  */
     @Test
     public void Map11(){
-        System.out.println(map4.isEmpty());
-        System.out.println(map4==null);
-        System.out.println(map4.get(0) == null);
+        log.info("map4.isEmpty()： {}", map4.isEmpty());
+        log.info("map4==null： {}", map4==null);
+        log.info("map4.get(0) == null： {}", map4.get(0) == null);
         System.out.println("-------------------很骚的分割线----------------");
-        System.out.println(map5.isEmpty());
-        System.out.println(map5==null);
+        log.info("map5.isEmpty()： {}", map5.isEmpty());
+        log.info("map5==null：{}", map5==null);
     }
-
-    /** map的key 是区分大小写的 */
+    /** map的key是区分大小写的 */
     @Test
     public void test(){
+        map2.put(null,"1");
+        log.info(" map2.get(null)：{}",  map2.get(null));
+    }
+
+    /** map的key是区分大小写的 */
+    @Test
+    public void CaseSensitive(){
         System.out.println(map1.containsKey("AA")); // true
         System.out.println(map1.containsKey("aa"));// false
     }

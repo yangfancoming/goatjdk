@@ -1,7 +1,9 @@
 package com.goat.jdk.learn.chapter017.demo1;
 
-import org.apache.log4j.Logger;
+import com.goat.jdk.learn.chapter017.App;
 import org.junit.Test;
+import org.slf4j.Logger;
+import org.slf4j.LoggerFactory;
 
 import java.io.*;
 import java.net.InetAddress;
@@ -13,7 +15,7 @@ import java.net.Socket;
 */
 public class App2 {
 
-    private static final Logger log = Logger.getLogger(App2.class);
+    private static final Logger log = LoggerFactory.getLogger(App.class);
 
     private static final String ip = "127.0.0.1";
 
