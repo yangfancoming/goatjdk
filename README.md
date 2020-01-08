@@ -34,9 +34,8 @@
          
           
     # G 多态性
-
-
-    G003  instanceof 运算符
+          G001  什么多态
+          G003  instanceof 运算符
 
 # chapter007  Java基础类库
     A021 System
