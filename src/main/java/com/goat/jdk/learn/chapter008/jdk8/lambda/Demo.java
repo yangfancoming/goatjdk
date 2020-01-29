@@ -21,16 +21,14 @@ public class Demo {
 
     @Test
     public void test2(){ // 语法格式二：Lambda 需要一个参数，但是没有返回值。
-        Consumer<Integer> con = (s)->System.out.println(s);
+        Consumer<Integer> con = (Integer s)->System.out.println(s);
         con.accept(1);
-
-
     }
 
     @Test
-    public void test4(){ // 语法格式四：Lambda 若只需要一个参数时，参数的小括号可以省略
-        Consumer<String> con1 = s->System.out.println(s); // (s) --- s
-        con1.accept("1");
+    public void test4(){ // 语法格式四：Lambda 若只需要一个参数时，参数的小括号和类型定义可以省略
+        Consumer<Integer> con = s->System.out.println(s); // (s) --- s
+        con.accept(1);
     }
 
     @Test
