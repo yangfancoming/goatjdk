@@ -1,4 +1,4 @@
-package com.goat.jdk.learn.chapter008.A06.item04;
+package com.goat.jdk.learn.chapter008.A06.properties;
 
 
 import org.junit.Before;
@@ -26,6 +26,12 @@ public class PropertiesTest3 {
         System.out.println( prop.getProperty("Width","160"));
         // hoho 是不存在的key  返回 defaultValue
         System.out.println( prop.getProperty("hoho","wahaha"));
+    }
+
+    // Properties 覆盖  put相同的key，则value会被覆盖  和map原理相同
+    @Test
+    public void overwrite() {
+        prop.put("Width", "111");
     }
 
 }

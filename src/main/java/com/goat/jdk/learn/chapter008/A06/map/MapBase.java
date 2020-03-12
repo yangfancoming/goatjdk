@@ -28,6 +28,7 @@ public abstract class MapBase {
     public void test1(){
         HashMap<Integer, Integer> map = new HashMap<>();
         map.put(1, null);
+        map.put(1, 111);
         map.put(2, null);
         map.put(null, 1);
         map.put(null, 2);

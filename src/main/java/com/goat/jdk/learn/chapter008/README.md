@@ -1,12 +1,7 @@
 # Java 集合
 
 
-    8.2 Collection 和 Iterator 接口
-    8.3 Set集合
-    8.4 List集合
-    8.5 Queue集合
-    8.6 Map集合  Java8 增强的Map集合
-    8.10  斗地主案例  数据结构
+
     
 # 8.10  斗地主案例  数据结构
 

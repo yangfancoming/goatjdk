@@ -1,4 +1,4 @@
-package com.goat.jdk.learn.chapter008.A06.item04;
+package com.goat.jdk.learn.chapter008.A06.properties;
 
 
 import org.junit.Test;
