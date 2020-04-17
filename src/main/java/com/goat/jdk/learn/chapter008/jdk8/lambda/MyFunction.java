@@ -8,7 +8,7 @@ package com.goat.jdk.learn.chapter008.jdk8.lambda;
  * @ date 2019/4/14---8:49
  函数式接口特征：
  1. 接口中标注了  @FunctionalInterface 注解
- 2. 接口中只有一个抽象方法 会被编译器自动认识成函数式接口
+ 2. 接口中只有一个抽象方法 会被编译器自动 识别成函数式接口
  3. 接口中有一个抽象，同时包含了 Object 类的其他抽象方法也会被识别成抽象接口
  */
 @FunctionalInterface

@@ -12,7 +12,7 @@ public class Person {
     //属性：
     private int age;
     private String name;
-
+    public String name2;
 
     //构造器：
     public Person(){
