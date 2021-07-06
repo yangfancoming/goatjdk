@@ -1,4 +1,4 @@
-package com.goat.jdk.learn.chapter009.A001.item04;
+package com.goat.jdk.learn.chapter009.A001.item02;
 
 
 import org.junit.Test;
@@ -20,7 +20,7 @@ import java.util.List;
  *     ?和T区别是？是一个不确定类，？和T都表示不确定的类型 ，但如果是T的话，函数里面可以对T进行操作，
  *     比方 T car = getCar()，而不能用？ car = getCar()。
  */
-public class App {
+public class App2 {
 
     @Test
     public void test2(){
@@ -54,14 +54,19 @@ public class App {
     }
 
     public static <T> void printList2(List<T> list) {
-        for (T elem : list)
+        for (T elem : list) {
             System.out.println(elem + " ");
+        }
+
         System.out.println();
     }
 
     public static  void printList3(List<?> list) {
-        for (int i = 0;i<list.size();i++)
-            System.out.println(list.get(i) + " ");
+        for (int i = 0;i<list.size();i++) {
+            Object o = list.get(i);
+            System.out.println(o+ " ");
+        }
+
         System.out.println();
     }
 
